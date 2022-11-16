@@ -11,7 +11,8 @@ var classArray = ['android.app.Application']; //监听类
 var methodArray = []; //监听方法 'android.app.Application.attachBaseContext','android.app.Application.$init'
 ```
 
+push r0gson.dex 到/data/local/tmp/ ,dumpso 需要SoFixer64和SoFixer32 到/data/local/tmp/位置
 使用frida加载js
 ```
-frida -U -f 包名 -l tt.js --no-pause
+frida -U -f 包名 -l frida_objection.js --no-pause
 ```
